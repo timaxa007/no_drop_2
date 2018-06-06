@@ -31,7 +31,7 @@ public class EventsForge {
 			if (!itemStack.hasTagCompound()) continue;
 			if (itemStack.getTagCompound().hasKey("NoDrop")) {
 				noDropsIEEP.save_drops.add(itemStack);
-				event.drops.remove(i);
+				event.drops.remove(i--);
 			}
 		}
 
